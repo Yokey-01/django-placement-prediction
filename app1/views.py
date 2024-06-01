@@ -66,7 +66,7 @@ def output(request):
 def result(request):
     # Load the scikit-learn model
     try: 
-        model= joblib.load('C:/Users/Student/Desktop/django-Placement_render-master/app1/finalized_model.sav')
+        model= joblib.load('finalized_model.sav')
     except FileNotFoundError:
         return HttpResponse("Model file not found. Please check the file path.")
 
